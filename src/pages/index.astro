@@ -1,0 +1,36 @@
+---
+// Import CSS styles
+import '../styles/global.css';
+import auroraLogo from '../assets/aurora-logo.jpg';
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>The Blog</title>
+        <style>
+            .aurora-logo {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                margin: 0 auto 20px;
+                box-shadow: 0 0 30px rgba(34, 211, 238, 0.6);
+                border: 3px solid var(--accent);
+                padding: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="page-shell home">
+            <div class="page-header">
+                <img src={auroraLogo.src} alt="Aurora Blog Logo" class="aurora-logo" />
+                <h1>The Blog</h1>
+                <p class="tagline">Where the Northern Lights Dance That's just some fancy wording for my blog</p>
+                <a href="/posts" class="posts-link">See Posts</a>
+            </div>
+        </main>
+    </body>
+</html>
